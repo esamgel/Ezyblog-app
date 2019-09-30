@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Header />
-    <!-- <DropNav /> -->
     <router-view />
     <Footer />
   </div>
@@ -10,14 +9,12 @@
 <script>
 import Header from './components/Header'
 import Footer from './components/Footer'
-import DropNav from './components/DropNav'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer,
-    DropNav
+    Footer
   }
 }
 </script>

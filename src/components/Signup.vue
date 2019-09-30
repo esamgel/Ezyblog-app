@@ -70,8 +70,8 @@ export default {
       localStorage.csrf = response.data.csrf
       localStorage.signedIn = true
       this.error = ''
+      location.reload()
       this.$router.replace('/members')
-      this.$forceUpdate()
     },
     signupFailed (error) {
       this.error = (error.response && error.response.data && error.response.data.error) || 'Something went wrong'
